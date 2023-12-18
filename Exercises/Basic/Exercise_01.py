@@ -19,9 +19,9 @@ if(x.isnumeric() & y.isnumeric()):
         print("The result is: " , int(x) * int(y),"\n")
 else:
     # איתור השגיאה
-    if(y.isnumeric()):
+    if(x.isnumeric() == False):
         print("Error in the license number Please enter numbers and no: ", x)
-    elif(x.isnumeric()):
+    elif(y.isnumeric() == False ):
         print("Error in the second number Please enter numbers and no: ",y)
     else:
         print("Error Please enter numbers and no: ",x,"and",y)
