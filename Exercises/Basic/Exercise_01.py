@@ -24,6 +24,6 @@ else:
     elif(x.isnumeric()):
         print("Error in the second number Please enter numbers and no: ",y)
     else:
-        print("Error Please enter numbers and no: ",x,y)
+        print("Error Please enter numbers and no: ",x,"and",y)
     pass
 
