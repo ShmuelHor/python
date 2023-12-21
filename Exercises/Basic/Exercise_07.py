@@ -5,9 +5,10 @@ txt = "Emma is good developer. Emma is a writer"
 txtt = "Emma"
 i = 0
 w = 0
-p = -1 
+p = 0 
 while(i > -1):
-    p = 1 + p
     i = txt.find(txtt,w)
     w = i + len(txtt)
+    if (i > -1):
+        p = 1 + p
 print("Emma appeared", p ,"times")
