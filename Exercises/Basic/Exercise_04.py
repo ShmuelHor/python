@@ -1,7 +1,7 @@
 # תרגיל 4: הסרת n תווים ראשונים ממחרוזת
 """כתוב תוכנית להסרת תווים ממחרוזת המתחילה מאפס עד 
 n והחזרת מחרוזת חדשה."""
-print("Enter string")
+print("Enter a string")
 str = input()
 print("Enter a number but no more than the length of the string")
 n = input()
