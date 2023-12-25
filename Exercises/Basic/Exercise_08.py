@@ -4,8 +4,10 @@ print("Enter which object you want to print:")
 print(  "If you want to print a pyramid of numbers in order") 
 print("enter the word 'number':",end=" ")
 b = input()
+
 print("Enter the amount of objects you want to print",end=" ") 
 number = input()
+
 # דבר רשאון אני בודק האם המונה זה מספר
 if(number.isnumeric() == True):
 # ואז אני מריץ לולאה רשאונה
