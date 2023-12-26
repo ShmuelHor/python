@@ -1,7 +1,6 @@
 # תרגיל 6: יצירת פונקציה רקורסיבית
 def tri_recursion(k):
-  # 
-
+    
   if(k > 0):
     last =  tri_recursion(k - 1)
     result = k + last
