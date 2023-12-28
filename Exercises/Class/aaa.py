@@ -3,8 +3,10 @@ class shmuel:
         self.nam = name
         self.ag = age
         
-p1 = shmuel("shmu", 20)
+    def __str__(self):
+        return f"{self.nam}: {self.ag}"
+        
+p1 = shmuel("shmuel", 20)
 
-print(p1.nam)
-print(p1.ag)
+print(p1)
 
