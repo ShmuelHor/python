@@ -11,19 +11,19 @@ class shmuel:
     def myfunc(self):
         print("Hello my name is: " + self.nam)
 
-# ההבדל בין שתי הפונקציות הם פה
+# זה שתי אפשרויות של הדפסה אני לא ראיתי הבדל בהדפסה
 
-# בפונקציה הזאות אני צריך למשוך כל ערך ולהדפיס        
 p1 = shmuel("shmuel", 36)
+# פה אני משנה ערך
 p1.ag = 20
 print(p1)
 
-# והפונקציה השניה פשוט מדפיסה
 p1 = shmuel("John", 20)
 p1.myfunc()
 
 # כהה מוחקים נתונים כשנדפיס אז יקפוץ שגיאה
 
 # p1 = shmuel("yoel", 45)
+# פה זה מחיקה של ערך
 # del p1.nam
 # print(p1.nam, p1.ag)
