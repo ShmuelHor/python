@@ -10,13 +10,20 @@ class person:
 # מחלקת הבן     
 class Student(person):
 # ברגע שאני מוסיפ את הפונקיצה הזאות אז מחלקת הבן לא תקרא לפונציה של מחלקת האב
-    def __init__(self,fname,lname):
-# פה אני קורא לפונקציה של מחלקת האב ואז ככה אני מושך נתונים מהפונקציה ממחלקת האב
-        person.__init__(self,fname,lname)
-        
+    def __init__(self,fname,lname ,year):
+# יש פונקציה שגורמת למחלקת הילד לרשת הכל ממחלקת האב
+# לא צריך להשמש בשם האלמנט של האב הוא יורש הכל
+        super().__init__(fname,lname)
+# אפשר גם להוסיף מאפיינים
+        self.GraduatioNyer = year
+    def welcome(self):
+        print("Welcome",self.FirstName,self.LastName,"to the class of",self.GraduatioNyer)
+
 x = person("shmuel" , "horvitz")
 x.PrintName()
        
-x = Student("yoel" , "horvitz")
+x = Student("yoel" , "horvitz", 2024)
 x.PrintName()
+
+x.welcome()
 
