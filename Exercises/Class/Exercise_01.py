@@ -4,12 +4,12 @@ class Vehicle:
         self.mileage = mileage
         
     def car(self):
-        print("The Max Speed of The Car is: ",self.max_speed)
-        print ("and The Mileage of The Car is:",self.mileage)
+        print("The max speed of the car is: ",self.max_speed)
+        print ("And the mileage of the car is:",self.mileage)
         
-print("Enter The Max Speed of The Car")
+print("Enter the max speed of the car")
 max_speed = input()
-print("Enter The Mileage of The Car")
+print("Enter the mileage of the car")
 mileage = input()
 if(max_speed.isnumeric() and mileage.isnumeric()):
     x = Vehicle(max_speed,mileage)
