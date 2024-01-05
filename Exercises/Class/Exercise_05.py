@@ -11,7 +11,7 @@ class Vehicle:
 
     # Print the content of the class
     def Print(self): 
-        return f"Color: {self.color} | Vehicle name: {self.name} | Speed: {self.max_speed} | Mileage: {self.mileage}"
+        print("Color:", self.color ,"| Vehicle name:", self.name ,"| Speed:", self.max_speed ,"|Mileage:" ,self.mileage)
 
 class Bus(Vehicle):
     pass
@@ -19,5 +19,5 @@ class Bus(Vehicle):
 class Car(Vehicle):
     pass
 
-car = Car("School Volvo",180,12)
-print(car.Print())
+x = Car("School Volvo",180,12)
+x.Print()
