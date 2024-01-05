@@ -15,4 +15,4 @@ class Bus(Vehicle):
         return super().seating_capacity(capacity) # אין צורך לחזור על ערך ברירת המחדל לדעתי
 
 School_bus = Bus("School Volvo", 180, 12)
-print(School_bus.seating_capacity())
+print(School_bus.seating_capacity(11))
