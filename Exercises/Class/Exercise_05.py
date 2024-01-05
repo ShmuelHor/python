@@ -9,9 +9,6 @@ class Vehicle:
         self.max_speed = max_speed
         self.mileage = mileage
 
-    # Print the content of the class
-    def Print(self): 
-        return f"Color: {color} | Vehicle name: {self.name} | Speed: {self.max_speed} | Mileage: {self.mileage}"
 
 class Bus(Vehicle):
     pass
@@ -20,4 +17,7 @@ class Car(Vehicle):
     pass
 
 car = Car("School Volvo",180,12)
-print(car.Print())
+print("The color of the car is: ",car.color)
+print("The name of the car is: ", car.name)
+print("The max speed of the car is: ", car.max_speed)
+print("The nileage of the car is: ",car.mileage)
