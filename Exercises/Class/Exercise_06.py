@@ -16,12 +16,10 @@ class Bus(Vehicle):
 # I am was have to exchange to float / int Because i have to divide
         sam = int(super().fare())
         sam += sam / 10
-        return sam
+        return f"Total Bus fare is: {sam}"
     
         
 
 School_bus = Bus("School Volvo", 12, 50)
-print("Total Bus fare is: ",School_bus.fare())
+print(School_bus.fare())
 
-School_bus = Vehicle("School Volvo", 12, 7)
-print("The total price of the vehicle is: ",School_bus.fare())
