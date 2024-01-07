@@ -18,9 +18,10 @@ class Person():
             age -= 1
         return age
         
-person1 = Person(input("Enter your full name: "),input("Enter your country of origin: "), date(int(input("Enter your date of birth, Year: ")),int(input("Days: ")),int(input("Months: "))))
+person1 = Person(input("Enter your full name: "),input("Enter your country of origin: "), date(int(input("Enter your date of birth, Year: ")),int(input("Months: ")),int(input("Days: "))))
 
 print("Name:", person1.name)
 print("Country:", person1.country)
 print("Date of Birth:", person1.date_of_birth)
 print("Age:", person1.calculate_age())
+
