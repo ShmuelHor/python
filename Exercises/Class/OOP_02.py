@@ -17,6 +17,7 @@ class Person():
         if today < date(today.year, self.date_of_birth.month, self.date_of_birth.day):
             age -= 1
         return age
+    
         
 person1 = Person(input("Enter your full name: "),input("Enter your country of origin: "), date(int(input("Enter your date of birth, Year: ")),int(input("Months: ")),int(input("Days: "))))
 
