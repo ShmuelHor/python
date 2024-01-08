@@ -17,18 +17,21 @@ class Person():
 
     
     def difference (self):
-        
+# אני מביא את הגיל שיצא בפונקציה הקודמת לפה
+        x = Person.calculate_age(self)
+# אני מביא את התאריך של היום
         today = date.today()
-        
-        if (today.month , today.day) <= (self.date_of_birth.month, self.date_of_birth.day):
+# מחשב בעוד כמה זמן אהיה לך יום הולדת
+# אם התאריך של היום הולדת שלך גדול מהתאריך של היום אז
+        if (today.month , today.day) < (self.date_of_birth.month, self.date_of_birth.day):
             month = self.date_of_birth.month - today.month
             day = self.date_of_birth.day -  today.day
             
             if day < 0:
                 month += -1
                 day += 30
-            return f"In {month} months and {day} days you will be "
-        
+            return f"In {month} months and {day} days you will be {x + 1} years old"
+# אם התאריך של היום הולדת שלך קטן מהתאריך של היום אז
         elif(today.month , today.day) > (self.date_of_birth.month, self.date_of_birth.day):
             month = self.date_of_birth.month - today.month
             day = self.date_of_birth.day -  today.day
@@ -37,13 +40,13 @@ class Person():
             if day < 0:
                 month += -1
                 day += 30
-            return f"In {month} months and {day} days you will be "
-
+            return f"In {month} months and {day} days you will be {x + 1} years old "
+# אם התאריך שווה אז
         else:
-            return f"aaaa"
+            return f"Happy Birthday"
         
         
 person1 = Person(date(int(input("Enter your date of birth, Year: ")),int(input("Months: ")),int(input("Days: "))))
 print("Date of Birth:", person1.date_of_birth)
 print("Age:", person1.calculate_age())
-print(person1.difference(),person1.calculate_age()+1,"years old")
+print(person1.difference())
