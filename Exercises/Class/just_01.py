@@ -27,12 +27,9 @@ class Person():
             if day < 0:
                 month += -1
                 day += 30
-                return f"In {month} months and {day} days you will be "
-   
-            elif day == 0:
-                return f"Happy Birthday Next year will be a boy "
-            
-        else:
+            return f"In {month} months and {day} days you will be "
+        
+        elif(today.month , today.day) > (self.date_of_birth.month, self.date_of_birth.day):
             month = self.date_of_birth.month - today.month
             day = self.date_of_birth.day -  today.day
             month += 11 
@@ -41,6 +38,9 @@ class Person():
                 month += -1
                 day += 30
             return f"In {month} months and {day} days you will be "
+
+        else:
+            return f"aaaa"
         
         
 person1 = Person(date(int(input("Enter your date of birth, Year: ")),int(input("Months: ")),int(input("Days: "))))
