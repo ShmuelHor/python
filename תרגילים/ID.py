@@ -40,6 +40,6 @@ def Conversion (txt):
     list1 = list(map(int, list1))
     return list1
 
-list1 = Conversion(str(input()))
+list1 = Conversion(str(input("Enter yor ID: ")))
 c = ID(list1)
-print(c.examination())
+print("Yor ID is ",c.examination())
