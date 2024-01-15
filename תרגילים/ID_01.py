@@ -39,7 +39,7 @@ class ID():
 my_randoms=[]
 for i in range (8):
     # Here I put the random numbers for the ID card
-    my_randoms.append(random.randrange(1, 10, 1))
+    my_randoms.append(random.randrange(0, 10, 1))
     
 x = ID(my_randoms)
 print("Yor ID is: ",x.examination())
