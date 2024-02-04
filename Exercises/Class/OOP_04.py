@@ -45,7 +45,7 @@ class Rectangle():
         return self.long_rib * 2 + self.short_rib * 2 
 
     
-circle = Circle(7)
+circle = Circle(10)
 print("The area of the circle is:{:10.2f}".format(circle.Area_calculation()))
 print("The circumference of the circle is:{:10.2f}".format(circle.Scope_calculation()))
 
