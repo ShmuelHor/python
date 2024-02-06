@@ -41,7 +41,7 @@ for i in range (8):
     # Here I put the random numbers for the ID card
     my_randoms.append(random.randrange(0, 10, 1))
     
-x = ID([2,1,2,6,2,3,2,0])
+x = ID(my_randoms)
 print("Yor ID is: ",x.examination())
         
 
