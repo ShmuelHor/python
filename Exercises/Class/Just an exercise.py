@@ -2,20 +2,20 @@
 class shmuel:
     # מעביר את הערכים שקיבלתי למשתנה אחר עם שייוך
     def __init__(self, name, age):
-        self.nam = name
-        self.ag = age
+        self.name = name
+        self.age = age
       # אני מחזיר את הערכים וכמובן יש פה את השיוך של המשתנה  
     def __str__(self):
-        return f"{self.nam}: {self.ag}"
+        return f"{self.name}: {self.age}"
     # פה הפונקציה מבצעת פקודת הדפסה 
     def myfunc(self):
-        print("Hello my name is: " + self.nam)
+        print("Hello my name is: ",  self.name)
 
 # זה שתי אפשרויות של הדפסה אני לא ראיתי הבדל בהדפסה
 
 p1 = shmuel("shmuel", 36)
 # פה אני משנה ערך
-p1.ag = 20
+p1.age = 20
 print(p1)
 
 p1 = shmuel("John", 20)
