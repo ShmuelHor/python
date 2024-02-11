@@ -38,30 +38,37 @@ elif 'cola' == x:
 else:
     print("Non existent drink please enter again")
 
-print("The total amount of the surplus is: ",y)
 
-if y > 10:
-  ten = (y // 10) - 1
-  y -= ten * 10 
+if y > 0 :
+    
+    print("The total amount of the surplus is: ",y)
+    
+    if y > 10:
+        ten = (y // 10) - 1
+        y -= ten * 10 
+    else:
+        pass
+
+    if y > 5:
+        five = (y // 5) -1
+        y -=five * 5
+    else:
+        pass
+
+    if y > 2:
+        two = (y // 2) - 1
+        y -= two * 2
+    else:
+        pass
+
+    one = y // 1
+
+    print("Your surplus in currencies is:")
+    print(ten," coins of ten")
+    print(five," coins of five")
+    print(two," coins of two")
+    print(one," coins of one")
+elif y == 0:
+    print("Thank you")
 else:
-    pass
-
-if y > 5:
-  five = (y // 5) -1
-  y -=five * 5
-else:
-    pass
-
-if y > 2:
-    two = (y // 2) - 1
-    y -= two * 2
-else:
-    pass
-
-one = y // 1
-
-print("Your surplus in currencies is:")
-print(ten," coins of ten")
-print(five," coins of five")
-print(two," coins of two")
-print(one," coins of one")
+    print("Put in more money ")
