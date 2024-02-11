@@ -6,11 +6,11 @@ cola = 4
 x = input("Please enter the name of the drink: ")
 
 if 'water' == x:
-    print(water)
+    print("The price is: ",water)
 elif 'orange' == x:
-    print(orange)
+    print("The price is: ",orange)
 elif 'apple' == x or 'cola' == x:
-    print(cola)
+    print("The price is: ",cola)
 else:
     print("Non existent drink please enter again")
 
