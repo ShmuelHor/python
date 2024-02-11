@@ -29,32 +29,35 @@ if 'water' == x:
 elif 'orange' == x:
     y -= orange * a
     print("The drink you have chosen is orange juice and the price is: ",orange * a)
-
 elif 'apple' == x:
     y -= apple * a
     print("The drink you have chosen is apple juice and the price is: ",apple * a)
-
 elif 'cola' == x:
     y -= cola * a
     print("The drink you have chosen is cola and the price is: ",cola * a)
-
 else:
     print("Non existent drink please enter again")
 
 print("The total amount of the surplus is: ",y)
+
 if y > 10:
-  ten = y // 10 
-  y -= (ten * 10) -10
+  ten = (y // 10) - 1
+  y -= ten * 10 
 else:
-  brake
+    pass
+
 if y > 5:
-  five = y // 5
-  y -= (five * 5)-5
+  five = (y // 5) -1
+  y -=five * 5
 else:
-  brake
-      
-two = (y // 2) - 2
-y -= two * 2
+    pass
+
+if y > 2:
+    two = (y // 2) - 1
+    y -= two * 2
+else:
+    pass
+
 one = y // 1
 
 print("Your surplus in currencies is:")
