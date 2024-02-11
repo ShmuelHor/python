@@ -42,15 +42,17 @@ else:
     print("Non existent drink please enter again")
 
 print("The total amount of the surplus is: ",y)
-
-ten = y // 10
-y -= ten * 10
-five = y // 5
-y -= five * 5
-two = y // 2
-y -= two * 2
-one = y // 1
-y -= one * 1
+if y > 10:
+  ten = y // 10 
+  y -= (ten * 10) -10
+  if y > 5:
+    five = y // 5
+    y -= (five * 5)-5
+    if y > 2:
+      two = (y // 2) - 2
+      y -= two * 2
+      one = y // 1
+      y -= one * 1
 print("Your surplus in currencies is:")
 print(ten," coins of ten")
 print(five," coins of five")
