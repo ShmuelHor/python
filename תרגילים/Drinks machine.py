@@ -19,7 +19,6 @@ two = 0
 five = 0
 ten = 0
 
-x = input("Please enter the name of the drink: ")
 a = int(input("Enter how many drinks you want to buy: "))
 y = int(input("Please enter the amount of shekels you entered: "))
 
@@ -43,25 +42,37 @@ if y > 0 :
     
     print("The total amount of the surplus is: ",y)
     
-    if y > 10:
-        ten = (y // 10) - 1
+    if  y > 10:
+        ten = y // 10 
         y -= ten * 10 
+
+        if y < 8 :
+            ten -= 1
+            y += 10 
     else:
         pass
 
     if y > 5:
-        five = (y // 5) -1
-        y -=five * 5
+        five = y // 5 
+        y -= five * 5 
+
+        if y < 3 :
+            five -= 1
+            y += 5
     else:
         pass
 
     if y > 2:
-        two = (y // 2) - 1
-        y -= two * 2
+        two = y // 2 
+        y -= two * 2 
+
+        if y < 1 :
+            two -= 1
+            y += 2
     else:
         pass
 
-    one = y // 1
+    one = y
 
     print("Your surplus in currencies is:")
     print(ten," coins of ten")
