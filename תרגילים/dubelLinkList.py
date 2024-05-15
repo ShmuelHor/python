@@ -1,13 +1,13 @@
 class Node:
-    def __init__(self,vel):
-        self.data = vel
+    def __init__(self,val):
+        self.data = val
         self.next = None
         self.previoes = None
 class dubelLinkList:
     head =None
     tail = None
-    def insert_first(self,vel):
-        new_node = Node(vel)
+    def insert_first(self,val):
+        new_node = Node(val)
         if self.head != None:
             new_node.next = self.head
             self.head.previoes = new_node
