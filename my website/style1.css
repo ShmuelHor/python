@@ -1,0 +1,65 @@
+body{
+    font-family: Verdana;
+    font-size: 25px;
+    text-align: center;
+    background-image: url(./רקע\ 1.jpg);
+    color: bisque;
+
+}
+h1{
+    font-size: 2.5em;
+    color: rgb(159, 184, 206);
+}
+#mytext{
+    background-color:rgb(249, 232, 214) ;
+    color: rgb(37, 65, 89);
+    border-radius: 50px;
+    font-family: Serif;
+
+}
+#mySubmit{
+    color: bisque;
+    background-color: rgb(114, 180, 158);
+    border-radius: 50px;
+}
+#mySubmit:hover{
+    background-color:bisque;
+    color:rgb(94, 151, 132) ;
+}
+.buttons{
+    font-size: 1em;
+    padding: 5px 25px;
+    background-color: rgb(94, 151, 132);
+    color: bisque;
+    border-radius: 5px;
+}
+#countLabel{
+    font-size: 2em;
+    padding: 5px 25px;
+
+}
+.buttons:hover{
+    background-color:bisque;
+    color:rgb(94, 151, 132) ;
+}
+#countLabel{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(184, 239, 242);
+
+}
+#yourAge{
+    background-color:rgb(249, 232, 214) ;
+    color: rgb(37, 65, 89);
+    border-radius: 50px;
+    font-family: Serif;
+
+}
+#Approval{
+    color: bisque;
+    background-color: rgb(114, 180, 158);
+    border-radius: 50px;
+}
+#Approval:hover{
+    background-color:bisque;
+    color:rgb(94, 151, 132) ;
+}
