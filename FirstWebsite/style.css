@@ -1,0 +1,28 @@
+body{
+    background-color:black;
+    text-align: center;
+}
+h1{
+    color:white;
+
+}
+h2{
+    color: aqua;
+    font-family:sans-serif;
+
+}
+p{
+    background-color: bisque;
+    height: 20px;
+    width: 70px;
+    color: blueviolet;
+    text-align: center;
+}
+a{
+    background-color: brown;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img{
+    border-radius: 50%;
+}
